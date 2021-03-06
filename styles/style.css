@@ -1,0 +1,37 @@
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* definimos um width de 730px, porém tambem definimos um padding de 64px para todos os lados, como temos um texto que esta alinhado horizontalmente ela soma as propriedades da horizontal padding left + padding right e tambem soma o tamanho da tag totalizando 858px, essa propriedade faz quem isso seja cancelado e que fique tudo dentro da tag sem modificar o tamanho dela */
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
+/* Box model 
+Modelo de caixa
+Toda caixa tem
+largura, altura, espaçamentos, preenchimentos
+bodar, cor, fundo, maneira que é a vista pelo html(display),
+posicionamento, alinhamento
+*/
