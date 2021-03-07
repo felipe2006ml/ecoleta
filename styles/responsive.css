@@ -85,4 +85,8 @@
         align-items: center;
         margin-top: -70px;
     }
+
+    .items-grid li {
+        padding: 10px 10px 5px;
+    }
 }
