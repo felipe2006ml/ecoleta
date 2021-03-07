@@ -43,6 +43,9 @@
 }
 
 @media(max-width: 700px) {
+    form {
+        padding: 10px;
+    }
     .field-group {
         display: flex;
         flex-direction: column;
@@ -58,6 +61,10 @@
 }
 
 @media (max-width: 485px) {
+    #page-home header {
+        margin-top: 20px;
+    }
+
     #page-home {
         background-position-x: 70vw;
     }
@@ -69,12 +76,13 @@
 
     #page-home header a {
         position: absolute;
-        bottom: -30px;
+        bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     #page-home main {
         align-items: center;
+        margin-top: -70px;
     }
 }
