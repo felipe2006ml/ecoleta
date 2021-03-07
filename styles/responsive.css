@@ -90,3 +90,42 @@
         padding: 10px 10px 5px;
     }
 }
+
+@media (max-width: 320px) {
+    #page-home header {
+        margin-top: 10px;
+    }
+
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+        margin-top: -50px;
+    }
+
+    #page-home main h1 {
+        font-size: 40px;
+    }
+
+    #page-home main p {
+        font-size: 15px;
+    }
+
+    .items-grid li {
+        padding: 10px 10px 5px;
+    }
+}
