@@ -42,6 +42,21 @@
     }
 }
 
+@media(max-width: 700px) {
+    .field-group {
+        display: flex;
+        flex-direction: column;
+    }
+    form .field-group .field + .field {
+        margin-left: 0;
+    }
+    .items-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+
 @media (max-width: 485px) {
     #page-home {
         background-position-x: 70vw;
