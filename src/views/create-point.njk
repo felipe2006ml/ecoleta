@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% set pageId = "page-create-point" %}
 
@@ -14,7 +14,7 @@
 
 
 {% block content %}
-{% include "partials/page-header.html" %}
+{% include "partials/page-header.njk" %}
 
 <form action="/savepoint" method="POST">
 
@@ -110,7 +110,7 @@
 
 {% block modal %}
     {% if saved %}
-        {% include "partials/point-created.html" %}}
+        {% include "partials/point-created.njk" %}}
     {% endif %}
 {% endblock modal %}
 

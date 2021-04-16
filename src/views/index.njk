@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% set pageId = "page-home" %}
 
@@ -34,7 +34,7 @@
 {% endblock content %}
 
 {% block modal %}
-{% include "partials/modal.html" %}
+{% include "partials/modal.njk" %}
 {% endblock modal %}
 
 {% block scripts %}

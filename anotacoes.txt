@@ -1,0 +1,26 @@
+usar .gitignore e dentro colocar node_modules/ para nao enviar todos arquivos do node para o git
+e na nova maquina usar o npm install
+
+node server.js serve para startar o nosso server 
+podemos criar um atalho para ele configurando o caminho dele dentro do package.json
+onde esta test mudamos para start e dentro das aspas colocar o caminho do server.js desta maneira
+"scripts": {
+    "start": "node src/server.js"
+  }
+
+e apos adicionar o atalho podemos utilizar apenas npm start
+
+repare que sempre que modificarmos o server.js precisaremos parar o servidor e iniciar novamente para ver as modificações
+para resolvermos isso podemos utilizar o nodemon para reiniciar o serviço sempre que houver alterações
+npm install nodemon -D
+devemos alterar o package.json tambem para nodemon
+"scripts": {
+    "start": "nodemon src/server.js"
+  },
+
+instalando um template engine para usarmos funcoes, if e elses dentro do html
+npm install nunjucks
+
+instalar o sqlite3
+npm install sqlite3
+

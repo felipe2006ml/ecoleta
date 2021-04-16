@@ -23,7 +23,7 @@ nunjucks.configure("src/views", {
 // req: requisicao
 // res: resposta
 server.get("/", function(req, res) {
-    return res.render("index.html")
+    return res.render("index.njk")
 })
 
 server.get("/create-point", function(req, res) {
@@ -31,7 +31,7 @@ server.get("/create-point", function(req, res) {
     // req.query: Query strings vindo da url
     // console.log(req.query)
 
-    return res.render("create-point.html")
+    return res.render("create-point.njk")
 })
 
 server.post("/savepoint", function(req, res) {
@@ -70,7 +70,7 @@ server.post("/savepoint", function(req, res) {
         console.log("Cadastrado com sucesso");
         console.log(this);
 
-        return res.render("create-point.html", {saved: true})
+        return res.render("create-point.njk", {saved: true})
     }
 
     db.run(query, values, afterInsertData)
@@ -83,7 +83,7 @@ server.get("/search-results", function(req, res) {
 
     if(search == "") {
         // pesquisa vazia
-        return res.render("search-results.html", {total: 0})
+        return res.render("search-results.njk", {total: 0})
     }
 
     // pegar os dados do banco de dados
@@ -95,7 +95,7 @@ server.get("/search-results", function(req, res) {
             const total = rows.length
 
             // mostrar a página html com os dados do banco de dados
-            return res.render("search-results.html", {places: rows, total: total})
+            return res.render("search-results.njk", {places: rows, total: total})
         })
 })
 
